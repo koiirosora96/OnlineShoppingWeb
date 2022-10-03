@@ -1,0 +1,6 @@
+.contactSession {
+    background-color: #FEB8B8;
+    grid-template-columns: 1fr 4fr;
+    display: grid;
+    width: 100%;
+}

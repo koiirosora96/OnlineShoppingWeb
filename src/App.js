@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import NarBar from './NarBar/NarBar.js'
+import ViewCategory from './ViewCategory/ViewCategory.js'
+import RecommentedSession from './RecommentedSession/RecommentedSession.js'
+import ContactSession from './ContactSession/ContactSession.js'
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
+          <div className="App">
+            <NarBar></NarBar>
+            <ViewCategory></ViewCategory>
+            <RecommentedSession></RecommentedSession>
+            <ContactSession></ContactSession>
+          </div>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

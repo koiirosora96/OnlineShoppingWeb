@@ -1,0 +1,21 @@
+.NarBar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: #F39898;
+    color: white;
+}
+
+.NarBar-login {
+    display: flex;
+}
+
+.NarBar-LocalGroceryStore {
+    font-size: 40px;
+    padding: 16px;
+}
+
+.NarBar-react-icons-bs {
+    font-size: 40px;
+}
