@@ -1,8 +1,10 @@
+import DetailProduct from "./DetailProduct";
+import "./detailPage.css"
 
 function DetailPage() {
     return ( 
-        <div>
-            Hello world
+        <div className="detailPage">
+            <DetailProduct />
         </div>
      );
 }

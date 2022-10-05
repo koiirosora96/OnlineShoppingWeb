@@ -1,0 +1,32 @@
+.detailProduct--top {
+    display: flex;
+    padding: 20px;
+}
+
+.detailProduct--img {
+    background-image: url("https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/3:2/w_3329,h_2219,c_limit/1521-WIRED-Cat.jpeg");
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    min-width: 600px;
+}
+
+.detailProduct--content {
+    margin-left: 30px;
+    padding: 10px;
+    text-align: left;
+}
+
+.detailProduct--list {
+    width: 70%;
+    text-align: left;
+    margin-left: 250px;
+}
+
+.detailProduct--list li{
+    padding: 10px;
+}
+
+.detailProduct--comp__product{
+    display: flex;
+}

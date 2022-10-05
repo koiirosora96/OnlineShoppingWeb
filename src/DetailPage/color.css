@@ -1,0 +1,14 @@
+.color {
+    display: flex;
+    background-color: blanchedalmond;
+    align-items: center;
+    padding: 4px;
+    margin-left: 20px;
+}
+
+.color-circle {
+    height: 18px;
+    width: 18px;
+    border-radius: 60%;
+    margin: 4px 10px;
+}
