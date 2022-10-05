@@ -1,0 +1,17 @@
+
+
+.SideBar {
+    background: linear-gradient(180deg, rgba(243,152,152,1) 0%, rgba(254,184,184,1) 100%);;
+    width: 15%;
+    text-align: left;
+}
+
+.SideBar h3 {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.SideBar input{
+    margin-top: 20px;
+    margin-left: 20%;
+}

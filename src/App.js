@@ -1,25 +1,23 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import NarBar from './NarBar/NarBar.js'
-import ViewCategory from './ViewCategory/ViewCategory.js'
-import RecommentedSession from './RecommentedSession/RecommentedSession.js'
+import SearchPage from './SearchPage/SearchPage';
+import ProductsPage from './ProductsPage/Productspage';
+import DetailPage from './DetailPage/DetailPage'
 import ContactSession from './ContactSession/ContactSession.js'
-// import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/">
           <div className="App">
-            <NarBar></NarBar>
-            <ViewCategory></ViewCategory>
-            <RecommentedSession></RecommentedSession>
-            <ContactSession></ContactSession>
+            <NarBar />
+              <Routes>
+                <Route path="/products/detail" element={<DetailPage />} />
+                <Route path="/products" element={<ProductsPage />} />
+                <Route path="/*" element={<SearchPage />} />
+              </Routes>
+            <ContactSession />
           </div>
-    //     {/* </Route>
-    //   </Routes>
-    // </BrowserRouter> */}
   );
 }
 
