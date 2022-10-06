@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import NarBar from './NarBar/NarBar.js'
 import SearchPage from './SearchPage/SearchPage';
 import ProductsPage from './ProductsPage/Productspage';
-import DetailPage from './DetailPage/DetailPage'
-import ContactSession from './ContactSession/ContactSession.js'
+import DetailPage from './DetailPage/DetailPage';
+import ContactSession from './ContactSession/ContactSession.js';
 
 
 function App() {

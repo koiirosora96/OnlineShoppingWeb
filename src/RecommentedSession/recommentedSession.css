@@ -1,5 +1,4 @@
 .recommentedSession {
-    background-color: #FEB8B8;
     width: 80%;
     margin: auto;
 }
@@ -9,4 +8,5 @@
     overflow-x : scroll;
     padding: 26px;
     margin: 12px 20px;
+    width: 80%;
 }

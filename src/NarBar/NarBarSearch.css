@@ -1,12 +1,22 @@
 .NarBarSearch {
     display: flex;
     margin-left: 20px;
+    color: white;
 }
 
 .NarBarSearch input {
     height: 20px;
     border-radius: 12px;
-    width: 250px
+    width: 250px;
+    border: none;
+}
+
+.NarBarSearch input:focus {
+    outline: none;
+}
+
+.NarBarSearch a:link{
+    color: red;
 }
 
 .NarBarSearch-input {

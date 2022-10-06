@@ -3,5 +3,14 @@
     grid-template-columns: 1fr 4fr;
     display: grid;
     width: 100%;
-    color: rgb(253, 240, 240)
+    color: rgb(253, 240, 240);
+}
+
+.contactSession h2{
+    border-right: 8px solid;
+}
+
+.contactSession--info {
+    text-align: left;
+    margin-left: 12px;
 }
