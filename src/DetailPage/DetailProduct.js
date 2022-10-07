@@ -1,5 +1,6 @@
 import './detailProduct.css'
 import Colors from './Colors';
+import AddToCartButton from '../module/AddToCartButton';
 import Product from '../ProductsPage/Product';
 
 function DetailProduct() {
@@ -24,6 +25,7 @@ function DetailProduct() {
                     <Colors />
                 </div>
             </div>
+
             <div className='detailProduct--list'>
                 {/* mapping list */}
                 <ul>
@@ -33,6 +35,9 @@ function DetailProduct() {
                     <li>On average cats live for around 12 to 15 years.</li>
                 </ul>
             </div>
+
+            <AddToCartButton />
+
             <div className='detailProduct--comp'>
                 <h2>comperation</h2>
                 <div className='detailProduct--comp__product'>

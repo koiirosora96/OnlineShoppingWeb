@@ -16,7 +16,6 @@
     text-align: left;
 }
 
-.product--stars .product--price {
-    position: absolute;
+.product--stars{
     display: flex;
-}
+} 

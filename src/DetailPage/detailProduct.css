@@ -30,3 +30,7 @@
 .detailProduct--comp__product{
     display: flex;
 }
+
+.detailProduct--stars {
+    display: flex;
+}

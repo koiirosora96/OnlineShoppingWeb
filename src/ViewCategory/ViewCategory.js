@@ -9,7 +9,6 @@ function ViewCategory() {
             <Category></Category>
             <Category></Category>
             <Category></Category>
-            <Category></Category>
         </div>
      );
 }

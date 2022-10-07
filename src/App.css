@@ -38,3 +38,19 @@
     transform: rotate(360deg);
   }
 }
+
+.addToCart button{
+  color: red;
+  padding: 4px 8px;
+}
+
+.cardInfo {
+  background-color: #322828;
+  height: auto;
+  width: 500px;
+  visibility: visible;
+  right: 0;
+  position: absolute;
+  padding: 20px;
+  margin-top: 295px;
+}

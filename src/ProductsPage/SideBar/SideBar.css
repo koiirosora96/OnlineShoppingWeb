@@ -1,7 +1,8 @@
 
 
 .SideBar {
-    background: linear-gradient(180deg, rgba(243,152,152,1) 0%, rgba(254,184,184,1) 100%);;
+    color: white;
+    background-color: #322828;
     width: 15%;
     text-align: left;
 }
