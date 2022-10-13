@@ -54,3 +54,49 @@
   padding: 20px;
   margin-top: 270px;
 }
+
+.signUp {
+  background-color: rgb(16, 14, 14);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpForm {
+  opacity: 100%;
+  padding: 20px;
+  border: rgb(106, 87, 87) 2px solid;
+  width: 24%;
+  background-color:rgb(1, 1, 1);
+  box-shadow: 5px 10px rgb(248, 200, 200);
+  border-radius: 20px;
+}
+
+.input-form {
+  opacity: 100%;
+  padding: 10px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
+.signUpForm-X {
+  display: flex;
+  justify-content: right;
+}
+
+.input-form-btn {
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.NarBar-userIcon {
+  font-size: 40px;
+}
