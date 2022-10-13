@@ -26,28 +26,36 @@ export default function SignUpForm(props){
                         type="email" 
                         id="email" 
                         placeholder="Your email"/>
+                        <p>{errors.email?.message}</p>
                     </div>
                     <div className="input-form">
                         <label htmlFor="userName">User name :</label>
                         <input 
-                        {...register("userName", { required: "this is required", minLength: {
+                        {...register("userName", { 
+                            required: "this is required", 
+                            minLength: {
                             value: 4,
                             message: "min length is 4"
                         } })} 
                         type="userName" 
                         id="userName" 
                         placeholder="Enter your user name"/>
+                        <p>{errors.userName?.message}</p>
+
                     </div>
                     <div className="input-form">
                         <label htmlFor="pwd">Password :</label>
                         <input 
-                        {...register("password", { required: "this is required", minLength: {
+                        {...register("password", { 
+                        required: "this is required", 
+                        minLength: {
                             value: 8,
                             message: "min length is 8"
                         } })} 
                         type="password" 
                         id="pwd" 
                         placeholder="Enter password"/>
+                        <p>{errors.password?.message}</p>
                     </div>
                     <button type="submit" className='input-form-btn'>Register</button>
                 </form>

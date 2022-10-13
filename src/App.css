@@ -68,6 +68,10 @@
   justify-content: center;
 }
 
+.signUp p {
+  font-size: 10px;
+}
+
 .signUpForm {
   opacity: 100%;
   padding: 20px;
