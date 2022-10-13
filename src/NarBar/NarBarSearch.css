@@ -4,11 +4,32 @@
     color: white;
 }
 
+/* .NarBarSearch h2 {
+    border: red 1px solid;
+    border-radius: 40%;
+    padding: 2px;
+} */
+
+.NarBarSearch h2:hover {
+    animation: changeBgColor 1s ;
+    border-radius: 20%;
+}
+
+@keyframes changeBgColor {
+    0% { background-color: aquamarine;};
+}
+
+.NarBarSearch span {
+    transform: rotate(220);
+}
+
 .NarBarSearch input {
     height: 20px;
     border-radius: 12px;
     width: 250px;
     border: none;
+    margin-left: 20px;
+    padding: 4px;
 }
 
 .NarBarSearch input:focus {
