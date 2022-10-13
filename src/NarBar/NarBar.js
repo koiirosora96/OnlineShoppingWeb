@@ -10,7 +10,7 @@ import './NarBar.css'
 function NarBar() {
     const [showCart, setShowCart] = useState(false);
     const [showSignUpForm,setShowSignUpForm] = useState(false)
-    const [isLogging, setIsLogging] = useState(true)
+    const [isLogging, setIsLogging] = useState(false)
 
     const toggleShowSignUpForm = useCallback(
         event => {
