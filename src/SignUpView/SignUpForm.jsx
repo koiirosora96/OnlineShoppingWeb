@@ -41,7 +41,6 @@ export default function SignUpForm(props){
                         id="userName" 
                         placeholder="Enter your user name"/>
                         <p>{errors.userName?.message}</p>
-
                     </div>
                     <div className="input-form">
                         <label htmlFor="pwd">Password :</label>

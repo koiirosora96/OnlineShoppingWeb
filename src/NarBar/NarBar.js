@@ -5,12 +5,14 @@ import { AiOutlineUser } from "react-icons/ai";
 import  { BsApple } from "react-icons/bs";
 import CartInfo from "../module/CartInfo";
 import SignUpForm from "../SignUpView/SignUpForm";
+import UserInfo from "./UserInfo";
 import './NarBar.css'
 
 function NarBar() {
     const [showCart, setShowCart] = useState(false);
     const [showSignUpForm,setShowSignUpForm] = useState(false)
-    const [isLogging, setIsLogging] = useState(false)
+    const [showUserInfo,setShowUserInfo] = useState(false)
+    const [isLogging, setIsLogging] = useState(true)
 
     const toggleShowSignUpForm = useCallback(
         event => {
@@ -19,6 +21,20 @@ function NarBar() {
         },
         [showSignUpForm]
     )
+
+    var newStudent = [{
+        "name":        "John",
+        "age":         21,
+        "nationality": "Spanish",
+        "email": "chevanthao96@gmail.com"
+    }];
+
+    localStorage.setItem("students", JSON.stringify(newStudent));
+    console.log(localStorage)
+    var retrievedObject = localStorage.getItem("students");
+    var stored          = JSON.parse(retrievedObject);
+
+    const email = stored[0].email
 
     return ( 
         <div className="NarBar-header">
@@ -29,7 +45,10 @@ function NarBar() {
             </div>
             <div className="NarBar-login">
                 { isLogging ? null : <div  onClick={toggleShowSignUpForm}>Sign up /</div>}
-                { isLogging ? <AiOutlineUser className="NarBar-userIcon"/> : <div>Login</div>}
+                <div className="user-info">
+                { isLogging ? <AiOutlineUser className="NarBar-userIcon" onClick={() => setShowUserInfo(!showUserInfo)}/> : <div>Login</div>}
+                { showUserInfo ? <UserInfo email={email}/> : null }
+                </div>
                 <MdOutlineLocalGroceryStore className="NarBar-LocalGroceryStore" onClick={() => {setShowCart(!showCart)}}/> (5+)
                 { showSignUpForm ? <SignUpForm toggleShowSignUpForm={toggleShowSignUpForm}/> : null}
                 { showCart ? <CartInfo /> : null}
