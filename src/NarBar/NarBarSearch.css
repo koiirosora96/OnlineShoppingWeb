@@ -4,23 +4,18 @@
     color: white;
 }
 
-/* .NarBarSearch h2 {
-    border: red 1px solid;
-    border-radius: 40%;
+.NarBarSearch h2 {
+    color: white;
+    background: linear-gradient(to left, #322828 50%, rgb(167, 173, 174) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
     padding: 2px;
-} */
+}
 
 .NarBarSearch h2:hover {
-    animation: changeBgColor 1s ;
-    border-radius: 20%;
-}
-
-@keyframes changeBgColor {
-    0% { background-color: aquamarine;};
-}
-
-.NarBarSearch span {
-    transform: rotate(220);
+    color: #3228285d;
+    transition: all .4s ease-in;
+    background-position: left;
 }
 
 .NarBarSearch input {
