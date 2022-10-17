@@ -7,7 +7,6 @@ import SearchPage from './SearchPage/SearchPage';
 import ProductsPage from './ProductsPage/Productspage';
 import DetailPage from './DetailPage/DetailPage';
 import Home from './Home/Home';
-import './db'
 
 
 function App() {
