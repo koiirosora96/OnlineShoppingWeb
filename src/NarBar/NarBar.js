@@ -30,7 +30,6 @@ function NarBar() {
     }];
 
     localStorage.setItem("students", JSON.stringify(newStudent));
-    console.log(localStorage)
     var retrievedObject = localStorage.getItem("students");
     var stored          = JSON.parse(retrievedObject);
 
