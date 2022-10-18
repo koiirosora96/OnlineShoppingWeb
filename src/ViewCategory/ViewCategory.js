@@ -1,39 +1,48 @@
 import "./ViewCategory.css"
 import Category from "./Category.js"
 
+// function importAll(r) {
+//     let images = {};
+//     r.keys().forEach((item,index) => { images[item.replace('./', '')] = r(item); });
+//     return images;
+// }
+
+// const images = importAll(require.context('../../public/SearchPagePics', false, /\.(png|jpeg|svg|jpg)$/))
+
+// console.log(images)
 function ViewCategory() {
     const SearchPageItems = [
         {
             "name": "Laptop",
-            "image": "src/SearchPagePics/Laptop.jpeg",
+            "image": "Laptop.jpeg",
             "category": "computer",
             "title": "laptop",
             "recommented": 1
         },
         {
             "name": "Clothes",
-            "image": "src/SearchPagePics/Clothes.jpg",
+            "image": "Clothes.jpg",
             "category": "goods",
             "title": "Clothes",
             "recommented": 1
         },
         {
             "name": "Iphone Case",
-            "image": "src/SearchPagePics/IphoneCase.jpeg",
+            "image": "IphoneCase.jpeg",
             "category": "cellPhone",
             "title": "IphoneCase",
             "recommented": 0
         },
         {
             "name": "LivingRoom",
-            "image": "src/SearchPagePics/LivingRoom.jpeg",
+            "image": "LivingRoom.jpeg",
             "category": "goods",
             "title": "LivingRoom",
             "recommented": 1
         },
         {
             "name": "Shoes",
-            "image": "src/SearchPagePics/Shoes.jpeg",
+            "image": "Shoes.jpeg",
             "category": "goods",
             "title": "Shoes",
             "recommented": 1
@@ -43,8 +52,8 @@ function ViewCategory() {
     return ( 
         <div className="ViewCategory">
             {
-            SearchPageItems.map(item => {
-                return <Category name={item.name} image={item.image} ></Category>})
+            SearchPageItems.map((item,index) => {
+                return <Category name={item.name} image={item.image} key={index}></Category>})
             }
         </div>
      );

@@ -2,12 +2,16 @@ import "./category.css"
 import { Link } from 'react-router-dom'
 
 function Category(props) {
-    console.log(props)
+    console.log(props.image)
     return ( 
         <div className="category">
-            <Link to="/products" ><img style={{
-                backgroundImage: `url(${props.image})`
-                }}></img>
+            <Link to="/products" >
+                <img 
+                    // src={require('../SearchPagePics/Laptop.jpeg')}
+                    src={`SearchPagePics/${props.image}`}
+                    alt=""
+                >
+                </img>
             </Link>
             <h2>{props.name}</h2>
         </div>

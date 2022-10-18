@@ -8,6 +8,7 @@
 .category img {
     width: 400px;
     height: 400px;
-    background-image: url("../SearchPagePics/IphoneCase.jpeg");
+    background-image: url("../SearchPagePics/Clothes.jpg");
     background-position: center;
+    background-repeat: no-repeat;
 }
