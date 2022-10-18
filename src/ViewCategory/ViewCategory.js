@@ -12,7 +12,7 @@ function ViewCategory() {
         },
         {
             "name": "Clothes",
-            "image": "Clothes.jpg",
+            "image": "Clothes.jpeg",
             "category": "goods",
             "title": "Clothes",
             "recommented": 1
