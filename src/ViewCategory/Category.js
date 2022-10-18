@@ -7,7 +7,6 @@ function Category(props) {
         <div className="category">
             <Link to="/products" >
                 <img 
-                    // src={require('../SearchPagePics/Laptop.jpeg')}
                     src={`SearchPagePics/${props.image}`}
                     alt=""
                 >
